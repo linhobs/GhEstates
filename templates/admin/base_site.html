@@ -1,0 +1,14 @@
+
+{#this updates the admin dashboard. its important that we name it base_site.html and extend the base.html#}
+{% extends 'admin/base.html' %}
+{% load static %}
+{#django admininstration#}
+{% block branding %}
+    <h1 id = 'head'>
+    Gh Estates Admin Area
+    </h1>
+{% endblock %}
+
+{% block extrastyle %}
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
